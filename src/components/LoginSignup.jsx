@@ -65,11 +65,11 @@ const LoginSignup = () => {
         password: 'password123',
       },
       faculty: {
-        email: 'sarah.johnson@eduresource.com',
+        email: 'faculty@eduresource.com',
         password: 'password123',
       },
       student: {
-        email: 'john.smith@student.eduresource.com',
+        email: 'student@eduresource.com',
         password: 'password123',
       },
     };
