@@ -134,9 +134,13 @@ const Users = () => {
   };
 
   const formatDate = (dateString) => {
-    return new Date(dateString).toLocaleDateString('en-GB', {
-      day: 'numeric',
-      month: 'long',
+    if (!dateString) return 'N/A';
+    const date = new Date(dateString);
+    if (isNaN(date.getTime())) return 'N/A';
+
+    return date.toLocaleDateString('en-GB', {
+      day: '2-digit',
+      month: '2-digit',
       year: 'numeric',
     });
   };
@@ -271,7 +275,11 @@ const Users = () => {
                         <span className={getRoleBadge(userItem.role)}>{userItem.role}</span>
                         <div className="flex items-center space-x-1 text-sm text-gray-500">
                           <Calendar className="w-4 h-4" />
-                          <span>Joined {formatDate(userItem.createdAt)}</span>
+                          <span>
+                            {userItem.createdAt
+                              ? `Joined ${formatDate(userItem.createdAt)}`
+                              : 'Join date N/A'}
+                          </span>
                         </div>
                       </div>
                     </div>
