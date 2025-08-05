@@ -234,8 +234,8 @@ The application includes quick login buttons for easy testing:
 | Role        | Email                              | Password    | Access Level                                   |
 | ----------- | ---------------------------------- | ----------- | ---------------------------------------------- |
 | **Admin**   | admin@eduresource.com              | password123 | Full system access, user management, analytics |
-| **Faculty** | sarah.johnson@eduresource.com      | password123 | Priority requests, extended checkout periods   |
-| **Student** | john.smith@student.eduresource.com | password123 | Standard requests, limited resources           |
+| **Faculty** | faculty@eduresource.com      | password123 | Priority requests, extended checkout periods   |
+| **Student** | student@eduresource.com | password123 | Standard requests, limited resources           |
 
 ## 🎯 User Workflows
 
